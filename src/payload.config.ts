@@ -20,8 +20,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  serverURL: 'http://localhost:3000/cms',
-  collections: [Users, Media, Pages,  /* Tags */],
+  collections: [Users, Media, Pages,  Tags],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
